@@ -39,6 +39,10 @@ const UserSchema = new mongoose.Schema(
     lastDonate:{
         type:String,
         default:""
+      },
+    fbUrl:{
+        type:String,
+        default:""
       }
   },
  

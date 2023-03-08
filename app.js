@@ -11,11 +11,11 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const port = process.env.PORT || 5050;
-const url = "mongodb+srv://habib:habib@cluster0.avdod.mongodb.net/bloodBank?retryWrites=true&w=majority";
+const url = process.env.MONGO_URL;
+console.log("🚀 ~ file: app.js:15 ~ url:", url)
 
 
 
-console.log(url);
 
 mongoose.connect(url, {
   useNewUrlParser: true,
